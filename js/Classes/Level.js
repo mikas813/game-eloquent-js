@@ -1,5 +1,5 @@
 class Level {
-	constructor(plan) {
+	constructor(plan) {	
 		let rows = plan.trim().split('\n').map(1 => [...1]);
 		this.height = rows.length;
 		this.width = rows[0].length;
@@ -12,8 +12,9 @@ class Level {
 				this.startActors.push(
 					type.create(new Vec(x, y), ch));
 				return 'empty';
-
 			});
 		});
 	}
 }
+		//Create an array of arrays from level's string splited 
+		//on newline and each line is spread into an array.
