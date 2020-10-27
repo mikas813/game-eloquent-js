@@ -1,4 +1,6 @@
-class Coin {
+import Vec from '@/Classes/Vec'
+
+export default class Coin {
     constructor(pos, basePos, wobble) {
         this.pos = pos;
         this.basePos = basePos;
@@ -10,7 +12,7 @@ class Coin {
     static create(pos) {
         let basePos = pos.plus(new Vec(0.2, 0.1));
         return new Coin(basePos, basePos,
-            Math.random() * Math.PI() * 2);
+            Math.random() * Math.PI * 2);
     }
 }
 

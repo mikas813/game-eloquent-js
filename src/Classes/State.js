@@ -1,4 +1,4 @@
-class State {
+export default class State {
 	constructor(level, actors, status) {
 		this.level = level;
 		this.actors = actors;
