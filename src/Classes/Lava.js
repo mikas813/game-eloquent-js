@@ -1,4 +1,6 @@
-class Lava {
+import Vec from '@/Classes/Vec'
+
+export default class Lava {
 	constructor(pos, speed, reset) {
 		this.pos = pos;
 		this.speed = speed;

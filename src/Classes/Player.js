@@ -1,4 +1,6 @@
-class Player {
+import Vec from '@/Classes/Vec'
+
+export default class Player {
     constructor(pos, speed) {
         this.pos = pos;
         this.speed = speed;

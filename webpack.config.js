@@ -21,10 +21,6 @@ module.exports = {
             '@': path.resolve(__dirname, 'src')
         },
     },
-    devServer: {
-        port: 8080,
-        hot: isDev
-    },
     plugins: [
         new CleanWebpackPlugin(),
         new HTMLWebpackPlugin({
